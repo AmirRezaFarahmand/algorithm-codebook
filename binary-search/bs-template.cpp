@@ -28,6 +28,16 @@ void solve()
         else
             l = mid + 1;
     }
+
+    // last true
+    int l = L, r = R; // [L, R]
+    while (l < r) {
+        int mid = l + (r - l + 1) / 2;
+        if (ok(mid))
+            r = mid - 1;
+        else
+            l = mid;
+    }
 }   
 
 int main()
