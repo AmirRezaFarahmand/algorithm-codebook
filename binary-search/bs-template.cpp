@@ -38,6 +38,17 @@ void solve()
         else
             l = mid;
     }
+
+    // lower bound
+    int l = 0, r = n;
+    while (l < r) {
+        int mid = (l + r) / 2;
+        if (a[mid] >= x)
+            r = mid;
+        else
+            l = mid + 1;
+    }
+    return l;
 }   
 
 int main()
