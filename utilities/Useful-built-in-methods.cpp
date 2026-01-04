@@ -27,6 +27,12 @@ void solve()
     // Remove an element
     v.erase(remove(v.begin(), v.end(), x), v.end());
     v.erase(remove_if(v.begin(), v.end(), pred), v.end());
+    
+    // Fill Array
+    memset(arr, init_val, sizeof(arr)); // dont use for "1" | good for -1, 0
+
+    fill(a, a + N, init_val);
+    fill(v.begin(), v.end(), init_val);
 }   
 
 int main()
