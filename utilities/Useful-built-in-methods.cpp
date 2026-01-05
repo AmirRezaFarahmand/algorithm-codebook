@@ -33,6 +33,12 @@ void solve()
 
     fill(a, a + N, init_val);
     fill(v.begin(), v.end(), init_val);
+
+
+    // Math buit-in
+    min({a, b, c})
+    gcd(a, b), lcm(a, b) // __gcd(a, b) 
+    abs(x) && llabs(x) && fabs(x)
 }   
 
 int main()
