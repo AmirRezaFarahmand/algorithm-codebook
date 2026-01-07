@@ -39,6 +39,10 @@ void solve()
     min({a, b, c})
     gcd(a, b), lcm(a, b) // __gcd(a, b) 
     abs(x) && llabs(x) && fabs(x)
+
+    // Permutations buit-in
+    next_permutation(begin, end)
+    prev_permutation(begin, end)
 }   
 
 int main()
